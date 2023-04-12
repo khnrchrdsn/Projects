@@ -1,0 +1,19 @@
+def vigenere_encrypt(plaintext, key):
+    ciphertext = ""
+    key_index = 0
+    for char in plaintext:
+        if char.isalpha():
+            # convert character to a number 0-25
+            char_num = ord(char.lower()) - 97
+            key_num = ord(key[key_index % len(key)].lower()) - 97
+            # add the key number to the character number
+            cipher_num = (char_num + key_num) % 26
+            # convert the cipher number back to a character
+            cipher_char = chr(cipher_num + 97)
+            # add the cipher character to the ciphertext
+            ciphertext += cipher_char
+            key_index += 1
+        else:
+            ciphertext += char
+    return ciphertext
+    

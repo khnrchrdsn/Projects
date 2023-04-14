@@ -20,4 +20,8 @@ def vigenere_encrypt(plaintext, key):
 
 
 
-
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```

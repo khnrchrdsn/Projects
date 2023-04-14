@@ -18,10 +18,3 @@ def vigenere_encrypt(plaintext, key):
             ciphertext += char
     return ciphertext
 
-
-
-```
-function test() {
-  console.log("notice the blank line before this function?");
-}
-```

@@ -1,5 +1,4 @@
 ```python
-
 def vigenere_encrypt(plaintext, key):
     ciphertext = ""
     key_index = 0
@@ -18,7 +17,6 @@ def vigenere_encrypt(plaintext, key):
         else:
             ciphertext += char
     return ciphertext
-
 ```
 
 
